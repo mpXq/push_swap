@@ -6,22 +6,18 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 13:50:23 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 13:57:08 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/09 19:00:09 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	*move(int *a)
-{
-	int	i;
-	int	tmp;
+#include "sorting.h"
 
-	i = 0;
-	tmp = 0;
-	while (a[i])
-	{
-		tmp = a[i + 1];
-		a[i + 1] = a[i];
-		i++;
-	}
-	return (a);
+int	pa(int *a, int *b)
+{
+	if (!b)
+		return (-1);
+	a = plus1(a);
+	a[0] = b[0];
+	b = minus1(b);
+	return (0);
 }

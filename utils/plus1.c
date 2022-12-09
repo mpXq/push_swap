@@ -1,20 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rr.c                                               :+:      :+:    :+:   */
+/*   plus1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 19:47:15 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 19:49:24 by pfaria-d         ###   ########.fr       */
+/*   Created: 2022/12/09 18:59:19 by pfaria-d          #+#    #+#             */
+/*   Updated: 2022/12/09 18:59:27 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sorting.h"
+#include "utils.h"
 
-int	rr(int *a, int *b)
+int	*plus1(int *a)
 {
-	ra(a);
-	rb(b);
-	return (0);
+	int	i;
+	int	tmp;
+	int	len;
+
+	i = 0;
+	len = ft_intplen(a);
+	tmp = 0;
+	while (i < len)
+	{
+		tmp = a[i + 1];
+		a[i + 1] = a[i];
+		i++;
+	}
+	return (a);
 }
