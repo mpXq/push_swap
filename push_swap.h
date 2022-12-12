@@ -6,11 +6,14 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 13:29:50 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 13:32:33 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:08:00 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
+
+# include "sorting/sorting.h"
+# include "utils/utils.h"
 
 #endif

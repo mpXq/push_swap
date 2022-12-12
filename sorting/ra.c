@@ -6,13 +6,13 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 19:43:30 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 19:45:44 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:09:39 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "sorting.h"
 
-int	rb(int *a)
+int	ra(int *a)
 {
 	int	tmp;
 	int	len;

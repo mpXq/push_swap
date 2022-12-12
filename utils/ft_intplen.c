@@ -6,15 +6,19 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 14:02:17 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 14:03:06 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/12 14:03:49 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "utils.h"
 
 int	ft_intplen(int *a)
 {
 	int	i;
 
 	i = 0;
+	if (!a)
+		return (0);
 	while (a[i])
 		i++;
 	return (i);

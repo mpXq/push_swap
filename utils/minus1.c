@@ -6,7 +6,7 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 18:58:29 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 19:04:24 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/12 13:42:42 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,14 @@
 int	*minus1(int *a)
 {
 	int	i;
-	int	tmp;
-	int	len;
+	int	*a2;
 
 	i = ft_intplen(a);
-	tmp = 0;
-	while (i - 1)
-	{
-		if (i > 0)
-		{
-			tmp = a[i - 1];
-			a[i - 1] = a[i];
-			i--;
-		}
-	}
-	return (a);
+	a2 = malloc (sizeof(int) * i - 1);
+	if (!a2)
+		return (0);
+	while (--i)
+		a2[i] = a[i + 1];
+	free(a);
+	return (a2);
 }

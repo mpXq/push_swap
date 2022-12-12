@@ -6,26 +6,24 @@
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 18:59:19 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/09 18:59:27 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2022/12/12 11:44:03 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "utils.h"
 
 int	*plus1(int *a)
 {
 	int	i;
-	int	tmp;
 	int	len;
+	int	*a2;
 
-	i = 0;
+	i = -1;
 	len = ft_intplen(a);
-	tmp = 0;
-	while (i < len)
-	{
-		tmp = a[i + 1];
-		a[i + 1] = a[i];
-		i++;
-	}
-	return (a);
+	a2 = malloc(sizeof(int) * (len + 1));
+	while (++i <= len)
+		a2[i + 1] = a[i];
+	a2[0] = 0;
+	return (a2);
 }
