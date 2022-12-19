@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   rr.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/09 13:32:54 by pfaria-d          #+#    #+#             */
-/*   Updated: 2022/12/12 14:11:10 by pfaria-d         ###   ########.fr       */
+/*   Created: 2022/12/09 19:47:15 by pfaria-d          #+#    #+#             */
+/*   Updated: 2022/12/09 19:49:24 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "push_swap.h"
+#include "sorting.h"
 
-static int	errorchecker(int argc, char **argv)
+int	rr(int *a, int *b)
 {
-	if (argc <= 1)
-	{
-		write(2, "Error\n", 6);
-		return (-1);
-	}
-	return (0);
-}
-
-int	main(int argc, char **argv)
-{
-	t_list	*a;
-	t_list	*b;
-
-	if (errorchecker(argc, argv))
-		return (-1);
+	ra(a);
+	rb(b);
 	return (0);
 }
