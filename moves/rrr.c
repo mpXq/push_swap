@@ -1,63 +1,67 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   r.c                                                :+:      :+:    :+:   */
+/*   rrr.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/27 14:37:09 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/04 16:03:14 by pfaria-d         ###   ########.fr       */
+/*   Created: 2023/01/04 14:54:03 by pfaria-d          #+#    #+#             */
+/*   Updated: 2023/01/04 15:23:52 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	ra(int a[], int len)
+int	rra(int a[], int len)
 {
 	int	tmp;
 
 	if (len > 1)
 	{
-		tmp = a[0];
-		minus1(a, len);
-		a[len - 1] = tmp;
-		write(1, "ra\n", 3);
+		tmp = a[len - 1];
+		plus1(a, len);
+		a[0] = tmp;
+		a[len] = 0;
+		write(1, "rra\n", 4);
 		return (1);
 	}
 	return (0);
 }
 
-int	rb(int a[], int len)
+int	rrb(int a[], int len)
 {
 	int	tmp;
 
 	if (len > 1)
 	{
-		tmp = a[0];
-		minus1(a, len);
-		a[len - 1] = tmp;
-		write(1, "rb\n", 3);
+		tmp = a[len - 1];
+		plus1(a, len);
+		a[0] = tmp;
+		a[len] = 0;
+		write(1, "rrb\n", 4);
 		return (1);
 	}
 	return (0);
 }
 
-int	rr(int a[], int b[], int lena, int lenb)
+int	rrr(int a[], int b[], int lena, int lenb)
 {
 	int	tmp;
 
 	if (lena > 1)
 	{
-		tmp = a[0];
-		minus1(a, lena);
-		a[lena - 1] = tmp;
+		tmp = a[lena - 1];
+		plus1(a, lena);
+		a[0] = tmp;
+		a[lena] = 0;
 	}
 	if (lenb > 1)
 	{
-		tmp = b[0];
-		minus1(b, lenb);
-		b[lenb - 1] = tmp;
+		tmp = b[lenb - 1];
+		plus1(b, lenb);
+		b[0] = tmp;
+		b[lenb] = 0;
 	}
-	write(1, "rr\n", 3);
+	write(1, "rrr\n", 4);
 	return (1);
 }

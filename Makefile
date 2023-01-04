@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pfaria-d <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/04 11:14:43 by pfaria-d          #+#    #+#              #
-#    Updated: 2023/01/04 14:03:46 by pfaria-d         ###   ########.fr        #
+#    Updated: 2023/01/04 16:26:02 by pfaria-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = moves/r.c moves/utils.c moves/p.c moves/s.c push_swap.c
+SRC = moves/rrr.c moves/r.c moves/utils.c moves/p.c moves/s.c push_swap.c sorting.c
 
 OBJS = $(SRC:.c=.o)
 
