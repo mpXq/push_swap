@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 10:46:18 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/04 16:01:28 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/01/05 12:12:52 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	minus1(int a[], int len)
 		j++;
 	}
 	a[j] = 0;
-	len = tmp;
+	len = tmp - 1;
 }
 
 void	plus1(int a[], int len)
@@ -54,7 +54,7 @@ void	plus1(int a[], int len)
 		a[j] = c[j];
 		j++;
 	}
-	len = tmp;
+	len = tmp + 1;
 	a[0] = 0;
 }
 
