@@ -33,5 +33,9 @@ int		rrb(int a[], int len);
 int		rrr(int a[], int b[], int lena, int lenb);
 int		sortminus6(int a[], int b[], int lena, int lenb);
 void	sort3(int a[], int lena, int i);
-
+int		secondsort(int a[], int b[], int lena, int lenb);
+int		firstsort(int a[], int b[], int lena, int lenb);
+int		findclosest(int a[], int lena, int baselena);
+int		findminus(int a[], int lena);
+int		find2thirdsmin(int a[], int lena, int baselena);
 #endif

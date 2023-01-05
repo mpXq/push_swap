@@ -57,34 +57,16 @@ int	findminus(int a[], int lena)
 	return (rep);
 }
 
-int	findminus2(int a[], int lena, int tmp)
-{
-	int	x;
-	int	rep;
-
-	x = 0;
-	rep = x;
-	while (x < lena)
-	{
-		if (a[rep] >= a[x] && a[rep] > tmp)
-			rep = x;
-		x++;
-	}
-	return (rep);
-}
-
 int	firstsort(int a[], int b[], int lena, int lenb)
 {
 	int	i;
-	int	tmp;
 	int	min;
 
 	i = 0;
 	while (lena > 3)
 	{
-		tmp = findminus(a, lena);
-		min = a[tmp];
-		if (tmp >= lena / 2)
+		min = a[findminus(a,lena)];
+		if (findminus(a,lena) >= lena / 2)
 			while (a[0] != min)
 				i += rra(a, lena);
 		else
@@ -110,7 +92,10 @@ int	sortminus6(int a[], int b[], int lena, int lenb)
 	}
 	else if (lena == 3)
 		sort3(a, lena, i);
-	else
+	else if (lena <= 67)
 		i += firstsort(a, b, lena, lenb);
+	else
+		i += secondsort(a, b, lena, lenb);
 	return (i);
 }
+

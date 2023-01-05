@@ -38,7 +38,7 @@ int	main(int argc, char **argv)
 	int	b[100000];
 	int	tmp;
 	int	i;
-/* 	int x = 0; */
+ //	int x = 0; 
 
 	i = 0;
 	if (errorchecker(argc, argv))
@@ -47,7 +47,10 @@ int	main(int argc, char **argv)
 	while (tmp-- > 0)
 		a[tmp] = ft_atoi(argv[tmp + 1]);
 	i = algo(a, b, argc - 1, 0);
-/* 	while (x < argc - 1)
-		printf("%d\n", a[x++]); */
+ /*	while (x < argc - 1)
+	{
+		printf("%d = %d\n", x,  a[x]);
+		x++;	
+	}*/
 	return (i);
 }

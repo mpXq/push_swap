@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRC = moves/rrr.c moves/r.c moves/utils.c moves/p.c moves/s.c push_swap.c sorting.c
+SRC = moves/rrr.c moves/r.c moves/utils.c moves/p.c moves/s.c push_swap.c sorting.c sorting2.c
 
 OBJS = $(SRC:.c=.o)
 
