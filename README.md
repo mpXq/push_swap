@@ -25,7 +25,7 @@ rra (reverse rotate a): Shift down all elements of stack a by 1.
 The last element becomes the first one.
 rrb (reverse rotate b): Shift down all elements of stack b by 1.
 The last element becomes the first one.
-rrr : rra and rrb at the same time.```
+rrr : rra and rrb at the same time.
 
 First of all,
 Sorting of 2 and 3 values is bruteforce.
