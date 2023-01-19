@@ -1,11 +1,9 @@
 # push_swap
 Because Swap_push isn’t as natural
-
+```
 The rules
-• You have 2 stacks named a and b.
-• At the beginning:
-• The stack a contains a random amount of negative and/or positive numbers
-which cannot be duplicated.
+You have 2 stacks named a and b.
+• At the beginning: The stack a contains a random amount of negative and/or positive numbers which cannot be duplicated.
 • The stack b is empty.
 • The goal is to sort in ascending order numbers into stack a. To do so you have the
 following operations at your disposal:
@@ -27,7 +25,7 @@ rra (reverse rotate a): Shift down all elements of stack a by 1.
 The last element becomes the first one.
 rrb (reverse rotate b): Shift down all elements of stack b by 1.
 The last element becomes the first one.
-rrr : rra and rrb at the same time.
+rrr : rra and rrb at the same time.```
 
 First of all,
 Sorting of 2 and 3 values is bruteforce.
