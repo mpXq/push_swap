@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 08:42:03 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/18 13:42:34 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/01/23 16:49:32 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,7 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 
 	i = 0;
 	if (!s)
-	{
-		freeee(s);
 		return (0);
-	}
 	else
 		s2 = malloc ((sizeof(char) * (len + 1)));
 	if (!s2)
