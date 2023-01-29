@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 11:58:04 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/18 11:44:22 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/01/29 16:03:35 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,21 +41,14 @@ static int	verif2(const char *str)
 static int	verif(const char *str)
 {
 	int	i;
-	int	p;
 
 	i = -1;
-	p = 1;
 	if (str[i + 1] && (str[i + 1] == '-' || str[i + 1] == '+'))
 		i++;
 	while (str[++i])
 	{
 		if (!(str[i] >= '0' && str[i] <= '9'))
-		{
-			if (str[i] == '.' && p)
-				p--;
-			else
-				return (1);
-		}
+			return (1);
 	}
 	if (verif2(str))
 		return (1);
