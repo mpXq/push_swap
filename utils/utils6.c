@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 11:22:31 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/18 12:49:07 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/01/25 14:44:49 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	is_doublon(char **argv, int argc, int x)
 		j = 0;
 		while (argv[j])
 		{
-			if (ft_strcmp(argv[j], argv[i]) == 0 && i != j)
+			if (ft_atol(argv[j]) == ft_atol(argv[i]) && i != j)
 			{
 				if (x != argc)
 					free(argv);
