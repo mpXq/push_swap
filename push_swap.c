@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 11:55:48 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/18 13:39:26 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:39:03 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ static void	is_sorted(char **argv, int i, int argc, int x)
 
 	tmp = i;
 	y = tmp;
-	while (argv[tmp])
+	while (argv && argv[tmp])
 		tmp++;
-	while (argv[i])
+	while (argv && argv[i])
 	{
 		if (i > 0 && ft_atol(argv[i - 1]) != -2147483649
 			&& ft_atol(argv[i]) > ft_atol(argv[i - 1]))
@@ -42,7 +42,7 @@ static void	is_sorted(char **argv, int i, int argc, int x)
 	{
 		if (argc != x)
 			ft_free(argv);
-		exit(1);
+		exit(0);
 	}
 }
 
@@ -52,7 +52,7 @@ static int	errorchecker(int argc, char **argv, int tmp, int x)
 
 	i = tmp;
 	if (x == 1)
-		exit(1);
+		exit(0);
 	while (argv[i])
 	{
 		if (ft_atol(argv[i]) == -2147483649)

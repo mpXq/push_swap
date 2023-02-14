@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 11:58:04 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/29 16:03:35 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/02/14 09:59:21 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,7 @@ int	findminus(t_stack p)
 static int	verif2(const char *str)
 {
 	if (!str[1] && (str[0] == '-' || str[0] == '+'))
-	{
-		write(2, "Error\n", 6);
 		return (1);
-	}
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 12:57:52 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/19 11:45:05 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/02/14 08:37:06 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,31 +20,6 @@ void	ft_free(char **split)
 	while (split[i])
 		freeee(split[i++]);
 	freeee(split);
-}
-
-static void	is_sorted(char **argv, int i, int argc, int x)
-{
-	int	y;
-	int	tmp;
-
-	tmp = i;
-	y = tmp;
-	while (argv[tmp])
-		tmp++;
-	while (argv[i])
-	{
-		if (i > 0 && ft_atol(argv[i - 1]) != -2147483649
-			&& ft_atol(argv[i]) > ft_atol(argv[i - 1]))
-			y++;
-		i++;
-	}
-	if (y == tmp - 1)
-	{
-		if (argc != x)
-			ft_free(argv);
-		write(1, "OK\n", 3);
-		exit(1);
-	}
 }
 
 static int	errorchecker(int argc, char **argv, int tmp, int x)
@@ -65,7 +40,6 @@ static int	errorchecker(int argc, char **argv, int tmp, int x)
 		i++;
 	}
 	i = tmp;
-	is_sorted(argv, i, argc, x);
 	is_doublon(argv, argc, x);
 	return (0);
 }

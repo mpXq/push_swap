@@ -6,7 +6,7 @@
 /*   By: pfaria-d <pfaria-d@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 15:02:38 by pfaria-d          #+#    #+#             */
-/*   Updated: 2023/01/23 16:47:30 by pfaria-d         ###   ########.fr       */
+/*   Updated: 2023/02/14 08:45:57 by pfaria-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void	checker(t_pswap *p)
 	str = get_next_line(0);
 	while (str && reader(p, str))
 		str = get_next_line(0);
-	if (!str || ft_strcmp(str, "\n") == 0)
+	if (!str)
 	{
 		if (p->b)
 			write(1, "KO\n", 3);
